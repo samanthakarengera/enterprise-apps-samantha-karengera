@@ -1,0 +1,17 @@
+. {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.h1 {
+    margin-bottom: 20px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f2a7cd;
+  text-direction: none;
+
+}
