@@ -45,3 +45,7 @@ De NGO helpt mensen een overzicht te geven van evenementen die worden georganise
 1. Open het project in IntelliJ
 2. Run `NgoappApplication.java`
 3. Open in je browser:
+
+---
+## Bronnen
+- ChatGPT AI: https://chatgpt.com/share/6a306a7e-7e44-83eb-a636-375c41ebed07 
