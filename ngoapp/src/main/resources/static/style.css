@@ -2,6 +2,10 @@
     margin-bottom: 12px;
     line-height: 1.5;
 }
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
 
 .h1 {
     margin-bottom: 20px;

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/style.css">
     <title>NGO Anderlecht - Homepage</title>
 </head>
@@ -27,7 +30,24 @@
 
 </nav>
 <h1>NGO Anderlecht</h1>
+<main class="container">
+    <h2>Laatste 10 Evenementen</h2>
 
+    <tbody>
+    <!-- th:each herhaalt dit rij-element voor de laatste 10 evenementen uit je Java Controller -->
+    <tr th:each="evenement : ${evenementen}">
+        <td th:text="${evenement.titel}">Titel komt hier</td>
+        <td th:text="${evenement.organisatie}">Organisatie komt hier</td>
+        <td>
+            <a th:href="@{/events/{id}(id=${evenement.id})}" class="btn-detail">Bekijk details</a>
+        </td>
+    </tr>
+    </tbody>
+
+    <div class="action-bar">
+        <a href="/new" class="btn-primary">Nieuw evenement toevoegen</a>
+    </div>
+</main>
 <footer class="text-center mt-5">
     <hr>
     <p>
